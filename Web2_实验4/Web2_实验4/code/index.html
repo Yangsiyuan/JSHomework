@@ -1,0 +1,62 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  	<title>图片自动滚动</title>
+</head>
+
+<body>
+	<style type="text/css">
+		#picScroll{
+			white-space: nowrap;<!--设置文本不换行-->
+			overflow: hidden;<!--设置溢出元素隐藏-->
+			width:600px;
+			height: 300px;
+			float: left;
+		}
+		#picScroll1{
+			float: left;
+			width: 600px;
+			height: 300px;
+		}
+		#picScroll2{
+			float: left;
+			width: 600px;
+			height: 300px;
+		}
+	</style>
+	<div id="picScroll">
+		<div id="picScroll1">
+			<img src="images/1.jpg" />
+			<img src="images/2.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/4.jpg" />
+			<img src="images/5.jpg" />
+			<img src="images/6.jpg" />
+			<img src="images/7.jpg" />
+			<img src="images/8.jpg" />
+		</div>
+		<div id="picScroll2"></div>
+ 	</div> 
+ 	<script type="text/javascript">
+ 		var scroll=document.getElementById('picScroll1')
+ 		var scroll1=document.getElementById('picScroll1');
+ 		var scroll2=document.getElementById('picScroll2');
+ 		scroll2.innerHTML=scroll1.innerHTML;
+ 		
+ 		function changToLeft(){
+ 			if (scroll2.offsetWidth-scroll1.offsetWidth<=0) {
+ 				
+ 				scroll.scrollLeft-=scroll1.offsetWidth;
+
+ 			}
+ 			else
+ 			{
+ 				scroll.scrollLeft(10);
+ 			}
+ 		}
+ 		var insertId=window.setInterval(changToLeft,10);
+ 		scroll.onmouseover=function(){clearInterval(insertId);};
+ 		scroll.onmouseout=function(){insertId=window.setInterval(changToLeft,10);};
+ 	</script>
+</body>
+</html>
