@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用户注册</title>
+</head>
+<body>
+	<style type="text/css">
+		div{
+			position: absolute;
+			left: 550px;
+			font-family: '宋体';
+		}
+	</style>
+<div>
+	<h1>&nbsp&nbsp用户注册</h1>
+	<table border="1" cellpadding="0" cellspacing="0">
+		<form>
+			<tr>
+				<th>用户名：</th>
+				<td><input type="text" name="userName" id="userName"></td>
+			</tr>
+			<tr>
+				<th>密码：</th>
+				<td><input type="password" name="password" id="password"></td>
+			</tr>
+			<tr>
+				<th>确认密码：</th>
+				<td><input type="password" name="ensure" id="ensure"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="middle">
+					<input type="button" id="sign up" value="注册">
+				</td>
+			</tr>
+		</form>
+	</table>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var $user=$('input[name="userName"]');
+	var $password=$('input[name="password"]');
+	var $ensure=$('input[name="ensure"]');
+	var $h1=$('h1');
+	var $error1=$('<span></span>');
+	var $error2=$('<span>用户名不能为空</span>');
+	var $error3=$('<sapn>两次输入的密码不符</span>')
+	$(document).ready(function(){
+		if($user==NULL){
+			$("#sign up").click(function(){
+				$("h1").after("$error2");
+				});
+		else if($password!=$ensure){
+				$("#sign up").click(function(){
+					$("h1").after("$error3");
+				});
+			}
+		}
+	})
+</script>
+</html>
