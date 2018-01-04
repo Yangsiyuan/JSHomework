@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcom To Hogwards</title>
+</head>
+<style type="text/css">
+	div{
+		border:1px black solid;
+		float: left;
+	}
+	#all{
+		height: 736px;
+		width: 1006px;
+		position: absolute;
+		left: 150px
+	}
+	#title{
+		height: 100px;
+		width: 1004px;
+		font-family: 'French Script MT';
+		font-size: 25px;
+		text-align: center;
+		background-image: url(images/37.jpg);
+		color:#0099ff;
+		opacity: 0.7;
+	}
+	#fir{
+		width: 300px;
+		height: 600px;
+		text-align: center;
+		font-family: 'Gabriola';
+	}
+	#sec{
+		width: 700px;
+		height: 600px;
+		text-align: center;
+	}
+	#foot{
+		height: 30px;
+		width: 1004px;
+		text-align: center;
+		background-color: brown;
+	}
+
+	#tb1{
+		height: 600px;
+		width: 700px;
+	}
+	#list{
+		list-style: none;
+		position: absolute;
+		left: 0px;
+		text-align: center;
+	}
+
+	#list li{
+		background-color: black;
+		height: 70px;
+		width: 215px
+	}
+
+	#list li ul{
+		display:none;
+	}
+	#list li ul li{
+		font-size: 5px;
+		
+	}
+	#list li.subMenuShow ul{
+		display:block;
+		}
+	#list a:hover{
+		color: #FFF;
+		font-weight: bold;
+		background:#999;
+	}
+
+	a{
+		text-decoration-line: none;
+		font-size: 30px;
+		color: white;
+	}
+	h2{
+		background-image: url(images/49.gif);
+		color: pink;
+		position: absolute;
+		top: 84px;
+	}
+</style>
+<body bgcolor="#660000">
+	<div id="all">
+		<div id="title">
+			<h1>
+				Hogwarts School of Witchcraft and Wizardry
+			</h1>
+		</div>
+		<div id="main">
+			<div id="fir" >
+				<h2>
+					<br/>
+					&nbsp &nbsp &nbsp &nbsp &nbsp
+					What do you want to know
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					<br/>
+					<br/>
+				</h2>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<ul id="list">
+					<li><a href="#">Hogewarts</a>
+						<ul>
+							<li><a href="#" style="font-size: 20px">Gryffindor</a></li>
+							<li><a href="#" style="font-size: 20px">Ravenclaw</a></li>
+							<li><a href="#" style="font-size: 20px">Slytherin</a></li>
+							<li><a href="#" style="font-size: 20px">Hufflepuff</a></li>
+						</ul>
+					</li>
+				<br/>
+					<li><a href="#">Harry Potter</a>
+						<ul>
+							
+							<li><a href="#" style="font-size: 20px">Harry Potter and the Philosopher's Stone</a></li>
+							<li><a href="#" style="font-size: 20px">Harry Potter and the Chamber of Secrets</a></li>
+							<li><a href="#" style="font-size: 20px">Harry Potter and the Prisoner of Azkaban</a></li>
+							<li><a href="#" style="font-size: 20px">Harry Potter and the Goblet of Fire</a></li>
+							<li><a href="#" style="font-size: 20px">Harry Potter and the Order of the Phoenix</a></li>
+							<li><a href="#" style="font-size: 20px">Harry Potter and the Half-Blood Prince</a></li>
+							<li><a href="#" style="font-size: 20px">Harry Potter and the Deathly Hallows</a></li>
+						</ul>
+					</li>
+				<br/>
+					<li><a href="#">Role</a>
+						<ul>								
+							<li><a href="#" style="font-size: 20px">Harry Potter</a></li>
+							<li><a href="#" style="font-size: 20px">Hermione Jean Granger</a></li>
+							<li><a href="#" style="font-size: 20px">Ronald Bilius "Ron" Weasley</a></li>
+							<li><a href="#" style="font-size: 20px">Albus Percival Wulfric Brian Dumbledore</a></li>
+							<li><a href="#" style="font-size: 20px">Severus Snape</a></li>
+							<li><a href="#" style="font-size: 20px">Rubeus Hagrid</a></li>
+							<li><a href="#" style="font-size: 20px"> Fred Weasley & George Weasley</a></li>
+							<li><a href="#" style="font-size: 20px">Draco Malfoy</a></li>
+						</ul>						
+					</li>
+				<br/>
+					<li><a href="#">Orgnization</a>
+						<ul>								
+							<li><a href="#" style="font-size: 20px">DEATH EATERS</a></li>
+							<li><a href="#" style="font-size: 20px">the Order of the Phoenix</a></li>
+							<li><a href="#" style="font-size: 20px">Dumbledo‘s Army</a></li>
+						</ul>
+					</li>
+				<br/>
+					<li><a href="#">Store</a>
+						<ul>								
+							<li><a href="#" style="font-size: 20px">Weasleys’ Wizard Wheezes</a></li>
+							<li><a href="#" style="font-size: 20px">Eeylops Owl Emporium </a></li>
+							<li><a href="#" style="font-size: 20px">Honeydukes Sweetshop</a></li>
+							<li><a href="#" style="font-size: 20px">Hog′s Head </a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="sec">
+				<table border="1px" id="tb1">
+					<tr>
+						<td>
+							Itroduce:
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Test & Game:
+			<form>
+				用户名：<input type="text" id="username" name="username" /><span id="errorTip"></span>
+				密码：<input type="password" id="passwd">
+				确认密码：<input type="password" id="rePasswd"/>
+				<input type="reset" id="reset" value="重设" />
+				<input id="submit" type="submit" value="提交" />
+			</form>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Store:
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="foot">
+			With Honor Of YSY
+			&nbsp &nbsp &nbsp &nbsp
+			E-mail:YSYisME@qq.com
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+		window.onload = function(){
+			var liNodes = document.getElementsByTagName("li");
+			for (var i=0; i<liNodes.length; i++)
+			{
+				liNodes[i].onmouseover = function(){
+					this.className = "subMenuShow";
+				}
+				liNodes[i].onmouseout = function(){
+					this.className = "";
+				}
+			}
+		}
+		window.onload = function() {
+			//为“用户名”添加验证函数，当失去焦点时调用函数
+			var username = document.getElementById("username");	
+			username.onblur = checkUsername;
+		} 
+
+		function checkUsername() { 
+			var username = document.getElementById("username");
+			//检验该文本框用户是否已经输入
+			if (username.value.length == 0)//username.value==''
+			{		
+				username.parentNode.innerHTML = username.parentNode.innerHTML+"<span style='color:red'>用户名必须输入</span>";
+			}
+		}
+	</script>
+</html>
